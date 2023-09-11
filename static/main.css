@@ -107,7 +107,7 @@ body {
 
 .messages .message.left .avatar {
 	float: left;
-	background: url('./img/ps.jpg');
+	background: url('./img/oedt-logo.png');
 }
 
 .messages .message.left .text_wrapper {
@@ -182,14 +182,14 @@ body {
 
 .app_button_1:disabled {
 	opacity: 0.5;
-	cursor:progress;
+	cursor: progress;
 }
 
 /* faq section | right side */
 /* ---------------------------------------------------------------------- */
 
 .panel {
-	border: 1px solid #DEE2E6;
+	border: 1px solid #dee2e6;
 	border-radius: 5px;
 }
 
@@ -250,34 +250,38 @@ body {
 }
 
 #loading_spinner {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
 }
 
 .spinner {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .collapsible {
-	background-color:#ebe197; /* Match this color to your chat window background color */
+	background-color: #ebe197; /* Match this color to your chat window background color */
 	color: #000; /* Match this color to your text color */
 	cursor: pointer;
 	padding: 10px; /* You can reduce this to make the button smaller */
@@ -327,7 +331,7 @@ body {
 
 /* chat | flashing loading dots */
 /* ---------------------------------------------------------------------- */
- .dot-flashing {
+.dot-flashing {
 	position: relative;
 	width: 10px;
 	height: 10px;
@@ -336,14 +340,15 @@ body {
 	color: #383838;
 	animation: dot-flashing 1s infinite linear alternate;
 	animation-delay: 0.5s;
-  }
-  .dot-flashing::before, .dot-flashing::after {
-	content: "";
+}
+.dot-flashing::before,
+.dot-flashing::after {
+	content: '';
 	display: inline-block;
 	position: absolute;
 	top: 0;
-  }
-  .dot-flashing::before {
+}
+.dot-flashing::before {
 	left: -15px;
 	width: 10px;
 	height: 10px;
@@ -352,8 +357,8 @@ body {
 	color: #383838;
 	animation: dot-flashing 1s infinite alternate;
 	animation-delay: 0s;
-  }
-  .dot-flashing::after {
+}
+.dot-flashing::after {
 	left: 15px;
 	width: 10px;
 	height: 10px;
@@ -362,24 +367,24 @@ body {
 	color: #383838;
 	animation: dot-flashing 1s infinite alternate;
 	animation-delay: 1s;
-  }
-  
-  @keyframes dot-flashing {
+}
+
+@keyframes dot-flashing {
 	0% {
-	  background-color: #383838;
+		background-color: #383838;
 	}
-	50%, 100% {
-	  background-color: rgba(152, 128, 255, 0.2);
+	50%,
+	100% {
+		background-color: rgba(152, 128, 255, 0.2);
 	}
-  }
+}
 
-  .stage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 5px 0;
-    margin: 0 -5%;
-    overflow: hidden;
-  }
-
+.stage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 5px 0;
+	margin: 0 -5%;
+	overflow: hidden;
+}
