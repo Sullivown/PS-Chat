@@ -155,6 +155,7 @@ body {
 	padding: 20px;
 	bottom: 0;
 	display: flex;
+	margin-block-end: 0px;
 }
 
 .bottom_wrapper #msg_input {
