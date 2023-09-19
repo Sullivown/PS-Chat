@@ -391,19 +391,11 @@ body {
 
 @keyframes dot-flashing {
 	0% {
-<<<<<<< HEAD
-		background-color: #383838;
-	}
-	50%,
-	100% {
-		background-color: rgba(152, 128, 255, 0.2);
-=======
 		background-color: #38383896;
 	}
 	50%,
 	100% {
 		background-color: #ffffffcb;
->>>>>>> talk-to-your-project-docs
 	}
 }
 
