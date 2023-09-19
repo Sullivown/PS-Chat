@@ -3,7 +3,6 @@
 }
 
 body {
-	background-color: #edeff2;
 	font-family: 'Calibri', 'Roboto', sans-serif;
 }
 
@@ -15,6 +14,11 @@ body {
 
 /* layout and common global classes */
 /* ---------------------------------------------------------------------- */
+
+.main-row {
+	width: 100%;
+	max-width: 1800px;
+}
 
 .chat_window {
 	border-radius: 10px;
@@ -30,6 +34,7 @@ body {
 }
 
 .top_menu .title {
+	position: relative;
 	text-align: center;
 	color: #337ab7;
 	font-size: 20px;
@@ -44,7 +49,8 @@ body {
 	padding: 20px 10px 0 10px;
 	margin: 0;
 	height: 500px;
-	overflow: scroll;
+	min-height: 70vh;
+	overflow: auto;
 }
 
 .messages .message {
@@ -82,7 +88,7 @@ body {
 	position: relative;
 }
 
-.messages .message .text_wrapper::after,
+/* .messages .message .text_wrapper::after,
 .messages .message .text_wrapper:before {
 	top: 18px;
 	border: solid transparent;
@@ -101,7 +107,7 @@ body {
 .messages .message .text_wrapper::before {
 	border-width: 15px;
 	margin-top: -2px;
-}
+} */
 
 /* bot message */
 
@@ -148,7 +154,7 @@ body {
 	color: #1a5770;
 }
 
-/* text inpur from user */
+/* text input from user */
 
 .bottom_wrapper {
 	background-color: #fff;
@@ -158,18 +164,17 @@ body {
 	margin-block-end: 0px;
 }
 
-.bottom_wrapper #msg_input {
+/* .bottom_wrapper #msg_input {
 	flex-grow: 1;
 	outline-width: 0;
 	padding: 12px;
 	border: 1px solid #bcbdc0;
 	border-radius: 50px;
 	margin-right: 15px;
-}
+} */
 
-.app_button_1 {
+/* .app_button_1 {
 	width: 140px;
-	background-color: #a3d063;
 	border-radius: 50px;
 	cursor: pointer;
 	padding: 12px;
@@ -178,8 +183,8 @@ body {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 300;
-	text-align: center;
-}
+	text-align: center; 
+}*/
 
 .app_button_1:disabled {
 	opacity: 0.5;
@@ -197,7 +202,7 @@ body {
 .panel-body {
 	background-color: #ffffff;
 	padding: 15px;
-	border-radius: 5px;
+	border-radius: 0px 0px 5px 5px;
 }
 
 .panel-group {
@@ -330,6 +335,20 @@ body {
 	word-wrap: break-word;
 }
 
+/* Non-Bootstrap components, Dark Mode and transitions */
+.non_bs {
+	transition: color 0.08s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+.dark-mode {
+	background-color: #212529 !important;
+	color: #dee2e6;
+}
+.dark-mode-border {
+	border: 1px solid #495057;
+}
+
 /* chat | flashing loading dots */
 /* ---------------------------------------------------------------------- */
 .dot-flashing {
@@ -337,8 +356,8 @@ body {
 	width: 10px;
 	height: 10px;
 	border-radius: 5px;
-	background-color: #383838;
-	color: #383838;
+	background-color: #ffffff;
+	color: #ffffff;
 	animation: dot-flashing 1s infinite linear alternate;
 	animation-delay: 0.5s;
 }
@@ -354,8 +373,8 @@ body {
 	width: 10px;
 	height: 10px;
 	border-radius: 5px;
-	background-color: #383838;
-	color: #383838;
+	background-color: #ffffff;
+	color: #ffffff;
 	animation: dot-flashing 1s infinite alternate;
 	animation-delay: 0s;
 }
@@ -364,19 +383,27 @@ body {
 	width: 10px;
 	height: 10px;
 	border-radius: 5px;
-	background-color: #383838;
-	color: #383838;
+	background-color: #ffffff;
+	color: #ffffff;
 	animation: dot-flashing 1s infinite alternate;
 	animation-delay: 1s;
 }
 
 @keyframes dot-flashing {
 	0% {
+<<<<<<< HEAD
 		background-color: #383838;
 	}
 	50%,
 	100% {
 		background-color: rgba(152, 128, 255, 0.2);
+=======
+		background-color: #38383896;
+	}
+	50%,
+	100% {
+		background-color: #ffffffcb;
+>>>>>>> talk-to-your-project-docs
 	}
 }
 
